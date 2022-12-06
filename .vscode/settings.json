@@ -12,6 +12,9 @@
     "javascript",
     "typescript"
   ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "files.eol": "\n",
   "solidity.formatter": "prettier",
   "solidity.packageDefaultDependenciesContractsDirectory": "contracts",
