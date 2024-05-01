@@ -22,32 +22,9 @@ General documentation of the Gearbox Protocol can be found [here](https://docs.g
 more tech-related infromation about the protocol, contract interfaces, integration guides and audits is available on the
 [Gearbox dev protal](https://dev.gearbox.fi).
 
-## Testing
-
-### Setup
-
-Running Forge tests requires Foundry. See [Foundry Book](https://book.getfoundry.sh/getting-started/installation) for installation details.
-
-### Unit tests
-
-`forge t`
-
-### Mainnet integration tests
-
-1. Start a Mainnet or Goerli fork with: `yarn fork` or `yarn fork-goerli`, respectively.
-2. Open a new terminal window and run `forge t --match-test _live_ --fork-url http://localhost:8545`.
-
-It is recommended to set `$ETH_MAINNET_BLOCK` or `$ETH_GOERLI_BLOCK` to run the tests on a fixed block. Mainnet tests can take significant time to run and can fail unexpectedly due to external provider errors. Re-running the tests on the same block (or without restarting the fork) will be sped up due to caching.
-
 ## Licensing
 
 The primary license for Gearbox contracts is the Business Source License 1.1 (BUSL-1.1), see [LICENSE](https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/LICENSE). The files licensed under the BUSL-1.1 have appropriate SPDX headers.
-
-###
-
-- The files in `contracts/adapters`, `contracts/interfaces` are licensed under GPL-2.0-or-later.
-- The files in `contracts/integrations` are either licensed under GPL-2.0-or-later or unlicensed (as indicated in their SPDX headers).
-- The files in `scripts`, `contracts/test`,`contracts/mocks` are unlicensed.
 
 ## Disclaimer
 
